@@ -22,7 +22,7 @@ def run_ml_app():
     amount = st.number_input('Transaction Amount (USD)', 0.01, 999999.99, value=300.00)
     age = st.slider("Customer Age", 18, 100, 18)
     occupation = st.selectbox("Customer Occupation", ['Student', 'Doctor', 'Engineer', 'Retired'])
-    duration = st.slider("Transaction Duration (Seconds)", 10, 600, 100)
+    duration = st.slider("Transaction Duration (Seconds)", 10, 600, 120)
     attempt = st.slider("Login Attempts", 1, 10, 1)
     balance = st.number_input('Account Balance (USD)', 0.01, 999999.99, value=5000.00)
 
