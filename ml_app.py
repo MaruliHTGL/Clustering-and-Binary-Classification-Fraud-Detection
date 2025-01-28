@@ -19,12 +19,12 @@ def load_model(model_file):
 def run_ml_app():
     st.markdown("<h2 style = 'text-align: center;'> Input the Transaction Data </h2>", unsafe_allow_html=True)
 
-    amount = st.number_input('Transaction Amount (USD)', 0.00, 999999.99, value=300.00)
+    amount = st.number_input('Transaction Amount (USD)', 0.01, 999999.99, value=300.00)
     age = st.slider("Customer Age", 18, 100, 18)
     occupation = st.selectbox("Customer Occupation", ['Student', 'Doctor', 'Engineer', 'Retired'])
-    duration = st.slider("Transaction Duration (Seconds)", 1, 600, 100)
+    duration = st.slider("Transaction Duration (Seconds)", 10, 600, 100)
     attempt = st.slider("Login Attempts", 1, 10, 1)
-    balance = st.number_input('Account Balance (USD)', 0.00, 999999.99, value=5000.00)
+    balance = st.number_input('Account Balance (USD)', 0.01, 999999.99, value=5000.00)
 
     st.markdown("<h2 style = 'text-align: center;'>The Transaction Data </h2>", unsafe_allow_html=True)
 
